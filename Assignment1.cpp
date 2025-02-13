@@ -1,24 +1,23 @@
 #include <iostream>
 using namespace std;
 
-class mul{
-
+//Declaring and defining class
+class multiply{
     public:
-    int multiplynumbers(int x,int y){
-
+        int multiplyNum(int x,int y){
         return x*y;
     }
 };
 
 int main(){
-    int num1,num2;
+    int num1,num2; //Creating variables
 
     cout<<"Enter two numbers:";
     cin>>num1>>num2;
 
-    mul p;
+    multiply p; //Object Creation
 
-    cout<<"Product is:"<<p.multiplynumbers(num1,num2);
+    cout<<"Product is:"<<p.multiplyNum(num1,num2); //Function call
     return 0;
 }
 
